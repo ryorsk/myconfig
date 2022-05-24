@@ -1,5 +1,5 @@
 #!/bin/sh
-git pull origin master
+git pull origin main
 cd config
 for configfile in .?*; do
     case $configfile in
