@@ -1,6 +1,14 @@
+" 文字コードをUTF-8に設定
+" （このファイル自体に非ASCII文字があるので scriptencoding を先に宣言する）
+set encoding=utf-8
+scriptencoding utf-8
+set fileencoding=utf-8
 
-" 文字コードをUFT-8に設定
-set fenc=utf-8
+" Vi互換モードを無効化（defaults.vim を読まない環境でも確実に）
+set nocompatible
+
+" バックスペースで改行・インデントも削除できるようにする
+set backspace=indent,eol,start
 
 " バックアップ・スワップを作らない
 set nobackup
